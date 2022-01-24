@@ -7,6 +7,5 @@
 */Debug*
 */obj/Debug*
 */build*
-*.pro
 *.pro.user
 *Makefile
