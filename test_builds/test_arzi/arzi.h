@@ -2,6 +2,8 @@
 #define ARZI_H
 
 #include <QMainWindow>
+#include <QFileDialog>
+#include <QDir>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class arzi; }
@@ -19,6 +21,7 @@ public:
 private slots:
         void gotopage();
         void back();
+        void addfiles();
 private:
     Ui::arzi *ui;
 };
