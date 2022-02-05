@@ -16,6 +16,8 @@ arzi::arzi(QWidget *parent)
     ui->setupUi(this);
 
     ui->e_g_showWhichFiles->setReadOnly(true);
+    //style
+
 
     //green - archive
     connect (ui->b_green, &QPushButton::clicked, this, &arzi::gotopage);
@@ -249,6 +251,9 @@ void arzi::open(QString ZipFile)
     ZipFile.clear();
 
 }
+
+
+
 
 
 

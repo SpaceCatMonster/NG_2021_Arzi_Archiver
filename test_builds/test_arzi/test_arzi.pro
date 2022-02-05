@@ -14,6 +14,8 @@ win32{
     LIBS += -LF:\Different\testruns\qtestzip\zlib123 -lz
 }
 
+win32:RC_ICONS += arzi.ico
+
 SOURCES += \
     main.cpp \
     arzi.cpp \

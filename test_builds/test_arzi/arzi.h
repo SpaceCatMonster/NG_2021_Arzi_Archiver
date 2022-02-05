@@ -37,6 +37,8 @@ private slots:
         void openarc();
         void open(QString ZipFile);
 
+
+
 private:
     Ui::arzi *ui;
 };
