@@ -6,20 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>991</width>
-    <height>626</height>
+    <width>605</width>
+    <height>400</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
-    <width>991</width>
-    <height>626</height>
+    <width>605</width>
+    <height>400</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>991</width>
-    <height>626</height>
+    <width>605</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>605</width>
+    <height>400</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -30,28 +42,49 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
-      <width>961</width>
-      <height>591</height>
+      <y>0</y>
+      <width>601</width>
+      <height>361</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="main_window">
      <widget class="QSplitter" name="splitter">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>11</x>
-        <y>253</y>
-        <width>921</width>
-        <height>101</height>
+        <x>80</x>
+        <y>140</y>
+        <width>431</width>
+        <height>61</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
+      <property name="opaqueResize">
+       <bool>false</bool>
+      </property>
+      <property name="handleWidth">
+       <number>22</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
       <widget class="QPushButton" name="b_green">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="autoFillBackground">
         <bool>false</bool>
        </property>
@@ -60,6 +93,9 @@
        </property>
       </widget>
       <widget class="QPushButton" name="b_blue">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="text">
         <string>Blue</string>
        </property>
@@ -75,8 +111,8 @@
      <widget class="QPushButton" name="b_gback">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>510</y>
+        <x>10</x>
+        <y>320</y>
         <width>80</width>
         <height>25</height>
        </rect>
@@ -88,7 +124,7 @@
      <widget class="QLineEdit" name="e_g_nameofarhive">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>120</x>
         <y>20</y>
         <width>411</width>
         <height>24</height>
@@ -98,37 +134,108 @@
      <widget class="QPushButton" name="b_g_find">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>220</y>
+        <x>20</x>
+        <y>120</y>
         <width>80</width>
-        <height>25</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="text">
-       <string>Find</string>
+       <string>Find
+files</string>
       </property>
      </widget>
      <widget class="QTextEdit" name="e_g_showWhichFiles">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>120</x>
         <y>50</y>
         <width>411</width>
-        <height>161</height>
+        <height>201</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLabel" name="l_name">
+     <widget class="QLabel" name="l_g_name">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>10</y>
-        <width>41</width>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>
       <property name="text">
-       <string>Name:</string>
+       <string>Name of archive:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_g_savepath">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>  Path to save :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="e_g_savepath">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>260</y>
+        <width>411</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_g_findpath">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>260</y>
+        <width>41</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_g_active_archive">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>320</y>
+        <width>80</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Archive</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_g_bigtext">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>320</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Archive window</string>
       </property>
      </widget>
     </widget>
@@ -136,8 +243,8 @@
      <widget class="QPushButton" name="b_bback">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>510</y>
+        <x>10</x>
+        <y>310</y>
         <width>80</width>
         <height>25</height>
        </rect>
@@ -146,19 +253,211 @@
        <string>Back</string>
       </property>
      </widget>
+     <widget class="QTextEdit" name="e_b_showFiles">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>561</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_b_choosearc">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>20</y>
+        <width>61</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Find</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_b_choosearch">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose archive:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="e_b_choosearch">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>391</width>
+        <height>24</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_b_openarch">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>310</y>
+        <width>80</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_b_bigtext">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>310</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>View window</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="yellow_window">
      <widget class="QPushButton" name="b_yback">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>510</y>
+        <x>10</x>
+        <y>280</y>
         <width>80</width>
         <height>25</height>
        </rect>
       </property>
       <property name="text">
        <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_y_unzip">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>280</y>
+        <width>80</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Unzip</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_y_archive">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Which archive to unzip:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_y_path">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Directory to throw files:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="e_y_archivepath">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>361</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="e_y_directorypath">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>361</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="l_y_bigtext">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>280</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Unzip window</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_y_choosedirectory">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>140</y>
+        <width>41</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="b_y_choosearchive">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>70</y>
+        <width>41</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
       </property>
      </widget>
     </widget>
@@ -169,7 +468,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>991</width>
+     <width>605</width>
      <height>25</height>
     </rect>
    </property>
